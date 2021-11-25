@@ -1,0 +1,245 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "shadows-framework",
+    "version": "4.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6.1",
+      "buildId": "uv2vt7q6hrejrkz5uuy5wb7fxy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadowapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.3.0-rc03"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "monitor",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.almworks.sqlite4java",
+          "module": "sqlite4java",
+          "version": {
+            "requires": "1.0.392"
+          }
+        },
+        {
+          "group": "com.ibm.icu",
+          "module": "icu4j",
+          "version": {
+            "requires": "53.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shadows-framework-4.5.1.jar",
+          "url": "shadows-framework-4.5.1.jar",
+          "size": 3905248,
+          "sha512": "ecf8194f3077954db3ad501c71c2311e8600fcd6dd05dbe6133fb41e9a851cade23bfbd0a8de3e7e6063b341ea22521d142fa0ec581d064d0cbc068648cc8ed3",
+          "sha256": "a7b8ccda588a2f7e0d3fd067da2a24efd8b167dbb97bafc095c184abbe4c00fc",
+          "sha1": "eeb8c44c2f81b7499a249f492840f624eaf61f04",
+          "md5": "3a9f8b85684999110f8cc5bab4aef35e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadowapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.3.0-rc03"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "monitor",
+              "type": "aar",
+              "extension": "aar"
+            }
+          }
+        },
+        {
+          "group": "com.almworks.sqlite4java",
+          "module": "sqlite4java",
+          "version": {
+            "requires": "1.0.392"
+          }
+        },
+        {
+          "group": "com.ibm.icu",
+          "module": "icu4j",
+          "version": {
+            "requires": "53.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "shadows-framework-4.5.1.jar",
+          "url": "shadows-framework-4.5.1.jar",
+          "size": 3905248,
+          "sha512": "ecf8194f3077954db3ad501c71c2311e8600fcd6dd05dbe6133fb41e9a851cade23bfbd0a8de3e7e6063b341ea22521d142fa0ec581d064d0cbc068648cc8ed3",
+          "sha256": "a7b8ccda588a2f7e0d3fd067da2a24efd8b167dbb97bafc095c184abbe4c00fc",
+          "sha1": "eeb8c44c2f81b7499a249f492840f624eaf61f04",
+          "md5": "3a9f8b85684999110f8cc5bab4aef35e"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "pluginapi",
+    "version": "4.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6.1",
+      "buildId": "uv2vt7q6hrejrkz5uuy5wb7fxy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pluginapi-4.5.1.jar",
+          "url": "pluginapi-4.5.1.jar",
+          "size": 10131,
+          "sha512": "e9699400db048e8455e587d68f2daea964cc1a2fa3025adf076da21e60e314ef62c91deb5e72775608986b50a81e9849fb45aabfeefb68665de009ad233e9951",
+          "sha256": "897d45fd094856eb8cbee54e70399a56b61130cf82ff2c2500ac4f5a105fa5ee",
+          "sha1": "7a7980de3a612a71da6e684297d56d6cd5b26a6c",
+          "md5": "de78a079f5a80416e658cf4a82547909"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pluginapi-4.5.1.jar",
+          "url": "pluginapi-4.5.1.jar",
+          "size": 10131,
+          "sha512": "e9699400db048e8455e587d68f2daea964cc1a2fa3025adf076da21e60e314ef62c91deb5e72775608986b50a81e9849fb45aabfeefb68665de009ad233e9951",
+          "sha256": "897d45fd094856eb8cbee54e70399a56b61130cf82ff2c2500ac4f5a105fa5ee",
+          "sha1": "7a7980de3a612a71da6e684297d56d6cd5b26a6c",
+          "md5": "de78a079f5a80416e658cf4a82547909"
+        }
+      ]
+    }
+  ]
+}

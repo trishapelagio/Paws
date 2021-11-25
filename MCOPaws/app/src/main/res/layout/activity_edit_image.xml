@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="?attr/actionBarSize" />
+
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/photoEditorView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:photo_src="@drawable/blank_image">
+
+    </ja.burhanrashid52.photoeditor.PhotoEditorView>
+
+    <ImageView
+        android:id="@+id/iv_undo_edit"
+        android:layout_width="@dimen/top_tool_icon_width"
+        android:layout_height="wrap_content"
+        android:background="@color/semi_black_transparent"
+        android:backgroundTint="#FFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_undo"
+        app:layout_constraintBottom_toTopOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintEnd_toStartOf="@+id/iv_redo_edit"
+        app:tint="#000000" />
+
+    <ImageView
+        android:id="@+id/iv_redo_edit"
+        android:layout_width="@dimen/top_tool_icon_width"
+        android:layout_height="wrap_content"
+        android:background="@color/semi_black_transparent"
+        android:backgroundTint="#FFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_redo"
+        app:layout_constraintBottom_toTopOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#000000" />
+
+    <ImageView
+        android:id="@+id/iv_upload_edit"
+        android:layout_width="@dimen/top_tool_icon_width"
+        android:layout_height="wrap_content"
+        android:background="@color/semi_black_transparent"
+        android:backgroundTint="#FFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_gallery"
+        app:layout_constraintBottom_toTopOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="#000000" />
+
+    <ImageView
+        android:id="@+id/iv_camera_edit"
+        android:layout_width="@dimen/top_tool_icon_width"
+        android:layout_height="wrap_content"
+        android:background="@color/semi_black_transparent"
+        android:backgroundTint="#FFFFFF"
+        android:padding="8dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toTopOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintStart_toEndOf="@id/iv_upload_edit"
+        app:tint="#000000" />
+
+    <ImageView
+        android:id="@+id/iv_close_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_bottom_edit"
+        app:tint="#000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_constraint_tools_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/gl_bottom_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/row_editing_tools" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_filter_view_edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/tool_bg"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_constraint_tools_edit"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_constraint_tools_edit"
+        tools:listitem="@layout/row_filter_view" />
+
+    <Button
+        android:id="@+id/btn_post_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#262626"
+        android:text="post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iv_save_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_bottom_edit"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

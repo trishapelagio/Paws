@@ -1,0 +1,247 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.robolectric",
+    "module": "robolectric",
+    "version": "4.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6.1",
+      "buildId": "uv2vt7q6hrejrkz5uuy5wb7fxy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.3.0-rc03"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "junit",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "sandbox",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "plugins-maven-dependency-resolver",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "javax.inject",
+          "module": "javax.inject",
+          "version": {
+            "requires": "1"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadows-framework",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcprov-jdk15on",
+          "version": {
+            "requires": "1.65"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "robolectric-4.5.1.jar",
+          "url": "robolectric-4.5.1.jar",
+          "size": 170969,
+          "sha512": "7a8e8572b833e1fac91a5fd0b4900e21f4ea21a4b1a11951beefeaf9cb8bd1370e9af2381356e2b445ad42a8e34b8eea8513208232fbd791d36223a67382bdf1",
+          "sha256": "e1d8a6137874bdb79dcb5a6a2e0a462342421cecc3cf5fb57a996937fb78ae1f",
+          "sha1": "80de328de558676149157c623f5b21db778cfa47",
+          "md5": "0e69a31e392e41dbffbbece2ccea3580"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.test",
+          "module": "monitor",
+          "version": {
+            "requires": "1.3.0-rc03"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "annotations",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "junit",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "pluginapi",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "resources",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "sandbox",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "utils-reflector",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "plugins-maven-dependency-resolver",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "javax.inject",
+          "module": "javax.inject",
+          "version": {
+            "requires": "1"
+          }
+        },
+        {
+          "group": "javax.annotation",
+          "module": "javax.annotation-api",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.robolectric",
+          "module": "shadows-framework",
+          "version": {
+            "requires": "4.5.1"
+          }
+        },
+        {
+          "group": "org.bouncycastle",
+          "module": "bcprov-jdk15on",
+          "version": {
+            "requires": "1.65"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "robolectric-4.5.1.jar",
+          "url": "robolectric-4.5.1.jar",
+          "size": 170969,
+          "sha512": "7a8e8572b833e1fac91a5fd0b4900e21f4ea21a4b1a11951beefeaf9cb8bd1370e9af2381356e2b445ad42a8e34b8eea8513208232fbd791d36223a67382bdf1",
+          "sha256": "e1d8a6137874bdb79dcb5a6a2e0a462342421cecc3cf5fb57a996937fb78ae1f",
+          "sha1": "80de328de558676149157c623f5b21db778cfa47",
+          "md5": "0e69a31e392e41dbffbbece2ccea3580"
+        }
+      ]
+    }
+  ]
+}
